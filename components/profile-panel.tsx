@@ -53,7 +53,7 @@ export function ProfilePanel() {
           <div className="p-6 space-y-6">
             {/* Header */}
             <div className="flex items-center justify-between">
-              <h3 className="font-semibold text-foreground">Profile</h3>
+              <h3 className="font-semibold text-black dark:text-foreground">Profile</h3>
               <Button variant="ghost" size="sm" onClick={closePanel} className="p-1">
                 <X className="w-4 h-4" />
               </Button>
@@ -69,20 +69,20 @@ export function ProfilePanel() {
                     className="w-16 h-16 rounded-full object-cover border-2 border-black"
                   />
                 ) : (
-                  <span className="text-xl font-medium text-foreground">{getInitials(state.userProfile.name)}</span>
+                  <span className="text-xl font-medium text-black dark:text-foreground">{getInitials(state.userProfile.name)}</span>
                 )}
               </div>
               <div className="flex-1">
-                <h4 className="font-semibold text-foreground">{state.userProfile.name}</h4>
-                <p className="text-sm text-muted-foreground">@{state.userProfile.username}</p>
-                <p className="text-sm text-muted-foreground">{state.userProfile.email}</p>
+                <h4 className="font-semibold text-black dark:text-foreground">{state.userProfile.name}</h4>
+                <p className="text-sm text-black/70 dark:text-muted-foreground">@{state.userProfile.username}</p>
+                <p className="text-sm text-black/70 dark:text-muted-foreground">{state.userProfile.email}</p>
               </div>
             </div>
 
             {/* Theme Toggle */}
             <div className="border-t border-border pt-4">
               <div className="flex items-center justify-between">
-                <span className="text-sm font-medium text-foreground">Theme</span>
+                <span className="text-sm font-medium text-black dark:text-foreground">Theme</span>
                 <Button variant="ghost" size="sm" onClick={toggleTheme} className="transition-colors-smooth focus-ring">
                   {state.theme === "light" ? (
                     <>
