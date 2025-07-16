@@ -14,7 +14,7 @@ export function SupportSection() {
 
   return (
     <>
-      <div className="text-center mt-24 mb-16 animate-fade-in" style={{ animationDelay: "0.8s" }}>
+      <div className="text-center mt-24 mb-16 animate-fade-in mb-32" style={{ animationDelay: "0.8s" }}>
         <Button
           onClick={handleSupportClick}
           variant="ghost"

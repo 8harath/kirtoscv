@@ -61,12 +61,12 @@ export function ProfilePanel() {
 
             {/* User Info */}
             <div className="flex items-center space-x-4">
-              <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center">
+              <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center border-2 border-black">
                 {state.userProfile.avatar ? (
                   <img
                     src={state.userProfile.avatar || "/placeholder.svg"}
                     alt={state.userProfile.name}
-                    className="w-16 h-16 rounded-full object-cover"
+                    className="w-16 h-16 rounded-full object-cover border-2 border-black"
                   />
                 ) : (
                   <span className="text-xl font-medium text-foreground">{getInitials(state.userProfile.name)}</span>
