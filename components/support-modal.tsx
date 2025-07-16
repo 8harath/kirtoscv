@@ -60,18 +60,29 @@ export function SupportModal() {
               </Button>
             </div>
 
-            {/* QR Code */}
-            <div className="text-center space-y-4">
-              <div className="w-48 h-48 mx-auto bg-muted rounded-lg flex items-center justify-center">
+            {/* QR Code and Call to Action */}
+            <div className="text-center space-y-6">
+              <div className="w-48 h-48 mx-auto bg-white border-2 border-black rounded-lg flex items-center justify-center shadow-md">
                 <img
-                  src="/placeholder.svg?height=192&width=192"
+                  src="/placeholder.svg"
                   alt="Support QR Code"
                   className="w-40 h-40 object-contain"
                 />
               </div>
-              <p className="text-body-small text-muted-foreground">
-                Helping us helps you — support development of more templates and features.
-              </p>
+              <div className="space-y-2">
+                <p className="text-lg font-semibold text-black">Scan to Support Us!</p>
+                <p className="text-body-small text-muted-foreground">
+                  Helping us helps you — support development of more templates and features.
+                </p>
+                <Button
+                  asChild
+                  className="w-full bg-black text-white hover:bg-gray-900 transition-colors mt-2"
+                >
+                  <a href="https://www.buymeacoffee.com/" target="_blank" rel="noopener noreferrer">
+                    Buy Me a Coffee
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
