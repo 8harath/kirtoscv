@@ -35,13 +35,13 @@ export function InfoBlocks() {
             style={{ animationDelay: `${index * 0.2}s` }}
           >
             <div className="flex justify-center">
-              <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center">
+              <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center border border-black">
                 <Icon className="w-6 h-6 text-foreground" />
               </div>
             </div>
             <div className="space-y-2">
               <h3 className="font-semibold text-foreground">{block.title}</h3>
-              <p className="text-body-small text-muted-foreground leading-relaxed">{block.description}</p>
+              <p className="text-body-small leading-relaxed text-black dark:text-muted-foreground">{block.description}</p>
             </div>
           </div>
         )
