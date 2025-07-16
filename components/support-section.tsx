@@ -18,7 +18,7 @@ export function SupportSection() {
         <Button
           onClick={handleSupportClick}
           variant="ghost"
-          className="animate-gentle-pulse border-4 border-black shadow-[0_6px_0_0_#222,0_8px_16px_0_rgba(0,0,0,0.15)] hover:-translate-y-1 active:translate-y-2 active:shadow-none transition-all duration-150 focus-ring text-foreground hover:text-foreground bg-white font-bold"
+          className="animate-gentle-pulse border-2 border-black shadow-lg hover:-translate-y-1 active:translate-y-2 active:shadow-none transition-all duration-150 focus-ring text-foreground hover:text-foreground bg-white font-bold"
         >
           <Heart className="w-4 h-4 mr-2" />
           Support Us
