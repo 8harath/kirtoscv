@@ -34,7 +34,7 @@ export function Header() {
               <div className="w-8 h-8 bg-foreground rounded-sm flex items-center justify-center">
                 <span className="text-background font-bold text-sm">K</span>
               </div>
-              <span className="font-semibold text-lg text-foreground">Kirtos CV</span>
+              <span className="font-semibold text-lg text-foreground">Kairos CV</span>
             </div>
 
             {/* Actions */}

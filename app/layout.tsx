@@ -4,7 +4,7 @@ import "./globals.css"
 import { AppProvider } from "@/context/app-context"
 
 export const metadata: Metadata = {
-  title: "Kirtos CV - AI-Powered Resume Transformation",
+  title: "Kairos CV - AI-Powered Resume Transformation",
   description: "Transform your resume into a clean, ATS-optimized, professional document using AI technology.",
     generator: 'v0.dev'
 }

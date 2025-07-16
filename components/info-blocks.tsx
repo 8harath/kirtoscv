@@ -7,7 +7,7 @@ const infoBlocks = [
     icon: Cpu,
     title: "AI-Powered Resume Formatting",
     description:
-      "Kirtos CV uses advanced AI to rephrase and format your resume for clarity, impact, and industry relevance.",
+      "Kairos CV uses advanced AI to rephrase and format your resume for clarity, impact, and industry relevance.",
   },
   {
     icon: Shield,

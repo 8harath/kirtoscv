@@ -10,7 +10,7 @@ export function Footer() {
             <button className="hover:text-foreground transition-colors-smooth focus-ring">Terms of Use</button>
             <button className="hover:text-foreground transition-colors-smooth focus-ring">Cookies Policy</button>
           </div>
-          <div className="text-body-small text-black dark:text-muted-foreground">© 2024 Kirtos CV. All rights reserved.</div>
+          <div className="text-body-small text-black dark:text-muted-foreground">© 2024 Kairos CV. All rights reserved.</div>
         </div>
       </div>
     </footer>
