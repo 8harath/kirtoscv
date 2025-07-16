@@ -30,7 +30,7 @@ export default function HomePage() {
           <div className="space-y-8">
             <div className="text-center space-y-4 animate-fade-in">
               <h1 className="text-display font-bold text-foreground">Kirtos CV</h1>
-              <p className="text-body-large text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-body-large max-w-2xl mx-auto text-black dark:text-muted-foreground">
                 Transform your resume into a clean, ATS-optimized, professional document using AI technology.
               </p>
             </div>
