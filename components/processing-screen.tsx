@@ -54,6 +54,18 @@ export function ProcessingScreen() {
         dispatch({ type: "SET_PROCESSING_PROGRESS", payload: { progress: 75, message: "Content Optimization" } })
         const processedResume = await processResumeWithGemini(state.rawContent)
 
+        // Save processed resume to MongoDB
+        try {
+          await fetch("/api/save-resume", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ resume: processedResume })
+          })
+        } catch (err) {
+          // Optionally log or handle save error, but don't block user
+          console.error("Failed to save resume to database", err)
+        }
+
         // Step 4: Final Formatting
         dispatch({ type: "SET_PROCESSING_PROGRESS", payload: { progress: 100, message: "Final Formatting" } })
         await new Promise((resolve) => setTimeout(resolve, 500))
