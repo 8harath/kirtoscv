@@ -55,8 +55,8 @@ export function UploadZone() {
           transition-all duration-300 ease-out
           ${
             isDragActive
-              ? "border-foreground bg-muted/50 scale-105"
-              : "border-border hover:border-foreground/50 hover:bg-muted/30"
+              ? "border-black/40 dark:border-neutral-700 bg-muted/50 scale-105"
+              : "border-black/20 dark:border-neutral-700 hover:border-black/40 dark:hover:border-neutral-500 hover:bg-muted/30"
           }
         `}
       >
