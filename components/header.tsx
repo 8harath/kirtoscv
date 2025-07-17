@@ -73,7 +73,7 @@ export function Header() {
           </div>
         </div>
       </header>
-      <div className="w-full h-px bg-border" />
+      <div className="w-full h-px bg-black/10 dark:bg-neutral-700" />
       <ProfilePanel />
     </>
   )
