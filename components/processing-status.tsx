@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { useResumeContext } from "@/context/resume-context"
-import { optimizeResumeContent } from "@/lib/ai-optimizer"
+import { processResumeWithGemini } from "@/lib/gemini-processor"
 import { Upload, FileText, Cpu, Palette, CheckCircle, AlertCircle } from "lucide-react"
 
 const processingSteps = [
@@ -71,8 +71,9 @@ export function ProcessingStatus() {
           payload: { stage: "optimize", progress: 75, message: "Optimizing with AI" },
         })
 
-        const optimizedContent = await optimizeResumeContent(extractedContent, targetRole, experienceLevel)
-        dispatch({ type: "SET_OPTIMIZED_CONTENT", payload: optimizedContent })
+        // Use Gemini API for resume optimization
+        const optimizedResume = await processResumeWithGemini(extractedContent)
+        dispatch({ type: "SET_OPTIMIZED_CONTENT", payload: optimizedResume })
 
         // Step 4: Format
         setCurrentStepIndex(3)
