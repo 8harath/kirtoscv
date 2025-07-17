@@ -14,13 +14,13 @@ export function SupportSection() {
 
   return (
     <>
-      <div className="text-center mt-24 mb-16 animate-fade-in mb-32" style={{ animationDelay: "0.8s" }}>
+      <div className="text-center mt-0 mb-16 animate-fade-in" style={{ animationDelay: "0.8s" }}>
         <Button
           onClick={handleSupportClick}
           variant="ghost"
-          className="animate-gentle-pulse border-2 border-black shadow-lg hover:-translate-y-1 active:translate-y-2 active:shadow-none transition-all duration-150 focus-ring text-foreground hover:text-foreground bg-white font-bold"
+          className="animate-gentle-pulse border-2 border-neutral-300 dark:border-neutral-700 shadow-lg hover:-translate-y-1 active:translate-y-2 active:shadow-none transition-all duration-150 focus-ring font-bold bg-white dark:bg-neutral-900 text-black dark:text-white hover:bg-neutral-100 dark:hover:bg-neutral-800"
         >
-          <Heart className="w-4 h-4 mr-2" />
+          <Heart className="w-4 h-4 mr-2 text-pink-500 dark:text-pink-400" />
           Support Us
         </Button>
       </div>
